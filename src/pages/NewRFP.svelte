@@ -26,7 +26,7 @@
   function saveRFP() {
     fetch("/api/newRFP", {
       method: "post",
-      body: JSON.stringify(rfpData)
+      body: JSON.stringify({ rfpData: true })
     }).then(() => navigateTo("/myRFPs"));
   }
 </script>

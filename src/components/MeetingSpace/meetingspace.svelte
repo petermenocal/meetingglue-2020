@@ -248,8 +248,7 @@
                   leading-tight focus:outline-none focus:shadow-outline"
                   type="number"
                   bind:value={d.dailyPeople}
-                  onfocus="this.value=''"
-                  value="0" />
+                  onfocus="this.value=''" />
               </div>
             </td>
           {/each}
