@@ -1,7 +1,6 @@
 <script>
   import { onMount } from "svelte";
   export let concessionsRequirements;
-
   import AirportTransferComp from "../ConcessionsComponents/airportTransferComp.svelte";
   import BoxDrayageComp from "../ConcessionsComponents/boxDrayageComp.svelte";
   import ClubLoungeAccessComp from "../ConcessionsComponents/clubLoungeAccessComp.svelte";
@@ -25,90 +24,89 @@
   <h1 class="text-2xl text-center mt-10 w-full">Rooms</h1>
   {#if concessionsRequirements && concessionsRequirements.guestRoomAttrition}
     <div class="w-full md:w-1/2">
-      <GuestRoomAttrition {concessionsRequirements} />
+      <GuestRoomAttrition />
     </div>
   {/if}
   {#if concessionsRequirements && concessionsRequirements.cutOffDate}
     <div class="w-full md:w-1/2">
-      <CutOffDate {concessionsRequirements} />
+      <CutOffDate />
     </div>
   {/if}
   <div class="w-full flex flex-row flex-wrap">
     {#if concessionsRequirements && concessionsRequirements.wifiInGuestRoomComp}
       <div class="w-full md:w-1/2">
-        <WifiInGuestRoomComp {concessionsRequirements} />
+        <WifiInGuestRoomComp />
       </div>
     {/if}
     {#if concessionsRequirements && concessionsRequirements.upgradeAtGroupRate}
       <div class="w-full md:w-1/2">
-        <UpgradeAtGroupRate {concessionsRequirements} />
+        <UpgradeAtGroupRate />
       </div>
     {/if}
     {#if concessionsRequirements && concessionsRequirements.compRoom}
       <div class="w-full md:w-1/2">
-        <CompRoom {concessionsRequirements} />
+        <CompRoom />
       </div>
     {/if}
     {#if concessionsRequirements && concessionsRequirements.discountedStaffRoom}
       <div class="w-full md:w-1/2">
-        <DiscountedStaffRoom {concessionsRequirements} />
+        <DiscountedStaffRoom />
       </div>
     {/if}
     {#if concessionsRequirements && concessionsRequirements.guestRoomCompRatio}
       <div class="w-full md:w-1/2">
-        <GuestRoomCompRatio {concessionsRequirements} />
+        <GuestRoomCompRatio />
       </div>
     {/if}
     {#if concessionsRequirements && concessionsRequirements.groupRateAvailable}
       <div class="w-full md:w-1/2">
-        <GroupRateAvailable {concessionsRequirements} />
+        <GroupRateAvailable />
       </div>
     {/if}
   </div>
   <h1 class="text-2xl text-center mt-10 w-full">Commission/Rebate</h1>
   {#if concessionsRequirements && concessionsRequirements.commissionGuestRoomComp}
     <div class="w-full md:w-1/2">
-      <CommissionGuestRoomComp {concessionsRequirements} />
+      <CommissionGuestRoomComp />
     </div>
   {/if}
   {#if concessionsRequirements && concessionsRequirements.rebateGuestRoom}
     <div class="w-full md:w-1/2">
-      <RebateGuestRoom {concessionsRequirements} />
+      <RebateGuestRoom />
     </div>
   {/if}
-
   <h1 class="text-2xl text-center mt-10 w-full">Other</h1>
   {#if concessionsRequirements && concessionsRequirements.welcomeAmenityComp}
     <div class="w-full md:w-1/2">
-      <WelcomeAmenityComp {concessionsRequirements} />
+      <WelcomeAmenityComp />
     </div>
   {/if}
   {#if concessionsRequirements && concessionsRequirements.plannerPointsGroup}
     <div class="w-full md:w-1/2">
-      <PlannerPointsGroup {concessionsRequirements} />
+      <PlannerPointsGroup />
     </div>
   {/if}
   {#if concessionsRequirements && concessionsRequirements.plannerPointsOther}
     <div class="w-full md:w-1/2">
-      <PlannerPointsOther {concessionsRequirements} />
+      <PlannerPointsOther />
     </div>
   {/if}
   {#if concessionsRequirements && concessionsRequirements.parkingPassComp}
     <div class="w-full md:w-1/2">
-      <ParkingPassComp {concessionsRequirements} />
+      <ParkingPassComp />
     </div>
   {/if}
   {#if concessionsRequirements && concessionsRequirements.airportTransferComp}
     <div class="w-full md:w-1/2">
-      <AirportTransferComp {concessionsRequirements} />
+      <AirportTransferComp />
     </div>
   {/if}
   {#if concessionsRequirements && concessionsRequirements.boxDrayageComp}
     <div class="w-full md:w-1/2">
-      <BoxDrayageComp {concessionsRequirements} />
+      <BoxDrayageComp />
     </div>
   {/if}
   {#if concessionsRequirements && concessionsRequirements.clubLoungeAccessComp}
-    <ClubLoungeAccessComp {concessionsRequirements} />
+    <ClubLoungeAccessComp />
   {/if}
 </div>

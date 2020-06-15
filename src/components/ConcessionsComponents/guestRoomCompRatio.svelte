@@ -1,33 +1,31 @@
 <script>
   import { onMount } from "svelte";
-  export let concessionsRequirements;
   let items = [10, 15, 20, 25, 30, 35, 40, 45];
   import RequiredButton from "./requiredButton.svelte";
+  let required = true;
+  function toggleRequirement(event) {
+    required = event.detail;
+  }
 </script>
 
-<div class="w-full p-4">
-  <div class="border border-round p-8 concessionBox">
-    <h1 class="text-green-400 font-extrabold uppercase">
-      Guest Room Comp Ratio
-    </h1>
-    <p>
-      {concessionsRequirements.guestRoomCompRatio ? 'included in RFP' : 'not in RFP'}
-    </p>
-    <RequiredButton type="guestRoomCompRatio" {concessionsRequirements} />
-    <div class="flex flex-row items-center justify-center">
-      <div class="w-1/4 text-right pr-4 pt-4">1 per</div>
-      <div class="w-3/4">
-        <select
-          name=""
-          class="mt-5 shadow appearance-none border border-gray-500 rounded
-          w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none
-          focus:shadow-outline text-xs bg-white text-black"
-          id="">
-          {#each items as x, idx}
-            <option value={x}>{x}</option>
-          {/each}
-        </select>
-      </div>
-    </div>
-  </div>
+<div class="flex flex-row justify-between items-center pb-2">
+  <label class="mr-2 block text-sm leading-5 font-medium text-gray-700">
+    Guest Room Comp Ratio
+  </label>
+  <RequiredButton on:required-toggle={toggleRequirement} />
 </div>
+{#if required}
+  <div class="flex flex-row items-center justify-center">
+    <div class="pr-2 w-1/6">1 per</div>
+    <select
+      name=""
+      class="mt-1 form-select block w-full pl-3 pr-10 py-2 text-base leading-6
+      border-gray-300 focus:outline-none focus:shadow-outline-blue
+      focus:border-blue-300 sm:text-sm sm:leading-5"
+      id="">
+      {#each items as x, idx}
+        <option value={x}>{x}</option>
+      {/each}
+    </select>
+  </div>
+{/if}

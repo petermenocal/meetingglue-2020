@@ -55,8 +55,11 @@
 
   <div class="flex flex-row justify-between mb-5">
     <label
-      class="bg-teal-600 rounded text-white flex flex-row items-center
-      justify-center px-4 py-2 mr-2 text-xs">
+      class="inline-flex items-center px-2.5 py-1.5 border border-transparent
+      text-xs leading-4 font-medium rounded text-indigo-700 bg-indigo-100
+      hover:bg-indigo-50 focus:outline-none focus:border-indigo-300
+      focus:shadow-outline-indigo active:bg-indigo-200 transition ease-in-out
+      duration-150 cursor-pointer">
       <input
         class="mr-2"
         type="checkbox"
@@ -65,8 +68,11 @@
       Sun
     </label>
     <label
-      class="bg-teal-600 rounded text-white flex flex-row items-center
-      justify-center px-4 py-2 mr-2 text-xs">
+      class="inline-flex items-center px-2.5 py-1.5 border border-transparent
+      text-xs leading-4 font-medium rounded text-indigo-700 bg-indigo-100
+      hover:bg-indigo-50 focus:outline-none focus:border-indigo-300
+      focus:shadow-outline-indigo active:bg-indigo-200 transition ease-in-out
+      duration-150 cursor-pointer">
       <input
         class="mr-2"
         type="checkbox"
@@ -75,8 +81,11 @@
       Mon
     </label>
     <label
-      class="bg-teal-600 rounded text-white flex flex-row items-center
-      justify-center px-4 py-2 mr-2 text-xs">
+      class="inline-flex items-center px-2.5 py-1.5 border border-transparent
+      text-xs leading-4 font-medium rounded text-indigo-700 bg-indigo-100
+      hover:bg-indigo-50 focus:outline-none focus:border-indigo-300
+      focus:shadow-outline-indigo active:bg-indigo-200 transition ease-in-out
+      duration-150 cursor-pointer">
       <input
         class="mr-2"
         type="checkbox"
@@ -85,8 +94,11 @@
       Tue
     </label>
     <label
-      class="bg-teal-600 rounded text-white flex flex-row items-center
-      justify-center px-4 py-2 mr-2 text-xs">
+      class="inline-flex items-center px-2.5 py-1.5 border border-transparent
+      text-xs leading-4 font-medium rounded text-indigo-700 bg-indigo-100
+      hover:bg-indigo-50 focus:outline-none focus:border-indigo-300
+      focus:shadow-outline-indigo active:bg-indigo-200 transition ease-in-out
+      duration-150 cursor-pointer">
       <input
         class="mr-2"
         type="checkbox"
@@ -95,8 +107,11 @@
       Wed
     </label>
     <label
-      class="bg-teal-600 rounded text-white flex flex-row items-center
-      justify-center px-4 py-2 mr-2 text-xs">
+      class="inline-flex items-center px-2.5 py-1.5 border border-transparent
+      text-xs leading-4 font-medium rounded text-indigo-700 bg-indigo-100
+      hover:bg-indigo-50 focus:outline-none focus:border-indigo-300
+      focus:shadow-outline-indigo active:bg-indigo-200 transition ease-in-out
+      duration-150 cursor-pointer">
       <input
         class="mr-2"
         type="checkbox"
@@ -105,8 +120,11 @@
       Thu
     </label>
     <label
-      class="bg-teal-600 rounded text-white flex flex-row items-center
-      justify-center px-4 py-2 mr-2 text-xs">
+      class="inline-flex items-center px-2.5 py-1.5 border border-transparent
+      text-xs leading-4 font-medium rounded text-indigo-700 bg-indigo-100
+      hover:bg-indigo-50 focus:outline-none focus:border-indigo-300
+      focus:shadow-outline-indigo active:bg-indigo-200 transition ease-in-out
+      duration-150 cursor-pointer">
       <input
         class="mr-2"
         type="checkbox"
@@ -115,8 +133,11 @@
       Fri
     </label>
     <label
-      class="bg-teal-600 rounded text-white flex flex-row items-center
-      justify-center px-4 py-2 mr-2 text-xs">
+      class="inline-flex items-center px-2.5 py-1.5 border border-transparent
+      text-xs leading-4 font-medium rounded text-indigo-700 bg-indigo-100
+      hover:bg-indigo-50 focus:outline-none focus:border-indigo-300
+      focus:shadow-outline-indigo active:bg-indigo-200 transition ease-in-out
+      duration-150 cursor-pointer">
       <input
         class="mr-2"
         type="checkbox"

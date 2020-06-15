@@ -1,9 +1,11 @@
 <script>
   import { onMount } from "svelte";
   let items = [];
-  export let concessionsRequirements;
   import RequiredButton from "./requiredButton.svelte";
-
+  let required = true;
+  function toggleRequirement(event) {
+    required = event.detail;
+  }
   onMount(() => {
     // create an array of integers
     for (var i = 1; i <= 4; i++) {
@@ -12,22 +14,21 @@
   });
 </script>
 
-<div class="w-full p-4">
-  <div class="border border-round p-8 concessionBox">
-    <h1 class="text-green-400 font-extrabold uppercase">Cutoff Date</h1>
-    <p>
-      {concessionsRequirements.cutOffDate ? 'included in RFP' : 'not in RFP'}
-    </p>
-    <RequiredButton type="cutOffDate" {concessionsRequirements} />
-    <select
-      name=""
-      class="mt-5 shadow appearance-none border border-gray-500 rounded w-full
-      py-2 px-3 text-gray-700 leading-tight focus:outline-none
-      focus:shadow-outline text-xs bg-white text-black"
-      id="">
-      {#each items as x, idx}
-        <option value={x}>{x} weeks</option>
-      {/each}
-    </select>
-  </div>
+<div class="flex flex-row justify-between items-center pb-2">
+  <label class="mr-2 block text-sm leading-5 font-medium text-gray-700">
+    Cutoff Date
+  </label>
+  <RequiredButton on:required-toggle={toggleRequirement} />
 </div>
+{#if required}
+  <select
+    name=""
+    class="mt-1 form-select block w-full pl-3 pr-10 py-2 text-base leading-6
+    border-gray-300 focus:outline-none focus:shadow-outline-blue
+    focus:border-blue-300 sm:text-sm sm:leading-5"
+    id="">
+    {#each items as x, idx}
+      <option value={x}>{x} weeks</option>
+    {/each}
+  </select>
+{/if}

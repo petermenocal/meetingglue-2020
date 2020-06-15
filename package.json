@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@now/node": "^1.7.0",
+    "@tailwindcss/ui": "^0.3.0",
     "flatpickr": "^4.6.3",
     "moment": "^2.26.0",
     "mongodb": "^3.5.9",
